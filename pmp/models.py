@@ -4,36 +4,36 @@ from django.db import models
 
 
 class Habits(models.Model):
-    water = models.IntegerField()
-    sleep = models.IntegerField()
-    exercise = models.IntegerField()
-    calories = models.IntegerField()
-    learning = models.IntegerField()
-    spending = models.IntegerField()
-    earning = models.IntegerField()
-    travel = models.IntegerField()
-    date = models.DateField(unique=True)
+    water = models.PositiveSmallIntegerField()
+    sleep = models.PositiveSmallIntegerField()
+    exercise = models.PositiveSmallIntegerField()
+    calories = models.PositiveSmallIntegerField()
+    learning = models.PositiveSmallIntegerField()
+    spending = models.PositiveSmallIntegerField()
+    earning = models.PositiveSmallIntegerField()
+    travel = models.PositiveSmallIntegerField()
+    date = models.DateField(unique=True, auto_now_add=True)
 
     def __str__(self):
         return self.date
 
 
 class Goals(models.Model):
-    water = models.IntegerField()
-    sleep = models.IntegerField()
-    exercise = models.IntegerField()
-    calories = models.IntegerField()
-    learning = models.IntegerField()
-    spending = models.IntegerField()
-    earning = models.IntegerField()
-    travel = models.IntegerField()
+    water = models.PositiveSmallIntegerField()
+    sleep = models.PositiveSmallIntegerField()
+    exercise = models.PositiveSmallIntegerField()
+    calories = models.PositiveSmallIntegerField()
+    learning = models.PositiveSmallIntegerField()
+    spending = models.PositiveSmallIntegerField()
+    earning = models.PositiveSmallIntegerField()
+    travel = models.PositiveSmallIntegerField()
 
     def __str__(self):
         return self.water
 
 
 class Reflection(models.Model):
-    date = models.DateField(unique=True)
+    date = models.DateField(unique=True, auto_now_add=True)
     reflection = models.TextField()
 
     def __str__(self):
