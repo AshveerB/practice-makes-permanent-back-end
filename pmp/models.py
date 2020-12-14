@@ -14,6 +14,9 @@ class Habits(models.Model):
     travel = models.IntegerField()
     date = models.DateField(unique=True)
 
+    def __str__(self):
+        return self.date
+
 
 class Goals(models.Model):
     water = models.IntegerField()
@@ -25,7 +28,13 @@ class Goals(models.Model):
     earning = models.IntegerField()
     travel = models.IntegerField()
 
+    def __str__(self):
+        return self.water
+
 
 class Reflection(models.Model):
     date = models.DateField(unique=True)
     reflection = models.TextField()
+
+    def __str__(self):
+        return self.date
