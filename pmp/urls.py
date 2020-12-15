@@ -7,3 +7,4 @@ router = DefaultRouter()
 router.register(r'habits', HabitViewSet, basename='habit')
 router.register(r'goals', GoalViewSet, basename='goal')
 router.register(r'reflections', ReflectionViewSet, basename='reflection')
+urlpatterns = router.urls

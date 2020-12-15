@@ -6,16 +6,14 @@ class HabitSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Habits
-        fields = ('water', 'sleep', 'exercise', 'calories',
-                  'learning', 'earning', 'spending', 'travel', 'date')
+        fields = ('water', 'sleep', 'exercise', 'calories', 'learning', 'earning', 'spending', 'travel', 'date')
 
 
 class GoalSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Goals
-        fields = ('water', 'sleep', 'exercise', 'calories',
-                  'learning', 'earning', 'spending', 'travel')
+        fields = ('water', 'sleep', 'exercise', 'calories', 'learning', 'earning', 'spending', 'travel')
 
 
 class ReflectionSerializer(serializers.ModelSerializer):
