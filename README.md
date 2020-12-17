@@ -2,7 +2,11 @@
 
 ## Project Description
 
+Server
+
 ## Deployed App
+
+Deployed App
 
 ## Technologies Used
 
@@ -20,3 +24,5 @@
 ## MVP
 
 ## Stretch Goals
+
+## Deployed Images
