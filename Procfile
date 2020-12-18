@@ -1,0 +1,1 @@
+web: gunicorn pmp_django.wsgi
